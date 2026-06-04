@@ -259,13 +259,19 @@ st.markdown("""
     <span class="fmt-pill">.txt</span>
     <span class="fmt-pill">.csv</span>
     <span class="fmt-pill">.json</span>
+    <span class="fmt-pill">.png</span>
+    <span class="fmt-pill">.jpg</span>
+    <span class="fmt-pill">.jpeg</span>
+    <span class="fmt-pill">.webp</span>
+    <span class="fmt-pill">.gif</span>
 </div>
 """, unsafe_allow_html=True)
 
 # ── Upload ─────────────────────────────────────────────────────────────────────
 uploaded_file = st.file_uploader(
     "Drop your file here, or click to browse",
-    type=["pdf", "docx", "pptx", "xlsx", "html", "txt", "csv", "json"],
+    type=["pdf", "docx", "pptx", "xlsx", "html", "txt", "csv", "json",
+          "png", "jpg", "jpeg", "webp", "gif"],
     label_visibility="visible",
 )
 
